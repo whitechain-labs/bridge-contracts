@@ -1,0 +1,29 @@
+{
+  "name": "bridge",
+  "version": "1.0.0",
+  "description": "Contract for cross-chain token and coin transfers",
+  "author": "Hlib Yuriev",
+  "license": "MIT",
+  "scripts": {
+    "compile": "npx tronbox compile",
+    "test": "CONTRACT=All npx tronbox test --network nile",
+    "deploy-Mapper:nile": "CONTRACT=Mapper npx tronbox migrate --network nile",
+    "deploy-Mapper:mainnet": "CONTRACT=Mapper npx tronbox migrate --network mainnet",
+    "deploy-Bridge:nile": "CONTRACT=Bridge npx tronbox migrate --network nile",
+    "deploy-Bridge:mainnet": "CONTRACT=Bridge npx tronbox migrate --network mainnet",
+
+    "scripts-Mapper-setup:mainnet": "SETUP=Mapper npx tronbox migrate --network mainnet --f 3 --to 3",
+    "scripts-Mapper-setup:nile": "SETUP=Mapper npx tronbox migrate --network nile --f 3 --to 3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.5",
+    "@openzeppelin/contracts-upgradeable": "^4.9.5",
+    "dotenv": "^17.0.1",
+    "ethereumjs-util": "^7.1.5",
+    "tronweb": "^6.0.3",
+    "@types/node": "^24.1.0",
+    "solc": "^0.8.23",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

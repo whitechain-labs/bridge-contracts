@@ -1,0 +1,65 @@
+{
+  "extends": "solhint:recommended",
+  "plugins": [],
+  "rules": {
+    "code-complexity": ["warn",7],
+    "function-max-lines": "off",
+    "max-line-length": ["error",120],
+    "max-states-count": ["warn",30],
+    "no-empty-blocks": "off",
+    "constructor-syntax": "warn",
+    "interface-starts-with-i": "warn",
+    "func-named-parameters": ["warn",0],
+    "func-param-name-mixedcase": "off",
+    "imports-order": "warn",
+    "modifier-name-mixedcase": "warn",
+    "named-parameters-mapping": "warn",
+    "private-vars-leading-underscore": ["off",{"strict":false}],
+    "var-name-mixedcase": "off",
+    "ordering": "warn",
+    "reason-string": ["warn",{"maxLength":64}],
+
+    "gas-calldata-parameters": "warn",
+    "gas-custom-errors": "off",
+    "gas-increment-by-one": "warn",
+    "gas-indexed-events": "warn",
+    "gas-length-in-loops": "warn",
+    "gas-named-return-values": "warn",
+    "gas-small-strings": "off",
+    "gas-struct-packing": "off",
+
+    "comprehensive-interface": "off",
+    "quotes": ["error","double"],
+
+    "compiler-version": ["error", "0.8.30"],
+    "func-visibility": ["error", { "ignoreConstructors": true }],
+    "no-inline-assembly": "off",
+
+    "gas-strict-inequalities": "off",
+    "use-natspec": [
+      "warn",
+      {
+        "title": {
+          "enabled": true,
+          "ignore": {}
+        },
+        "author": {
+          "enabled": true,
+          "ignore": {}
+        },
+        "notice": {
+          "enabled": true,
+          "ignore": {}
+        },
+        "param": {
+          "enabled": true,
+          "ignore": {}
+        },
+        "return": {
+          "enabled": true,
+          "ignore": {}
+        }
+      }
+    ]
+  }
+}
